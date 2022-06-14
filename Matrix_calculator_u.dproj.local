@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/03/17 23:03:28.000.393,=D:\Delphiiii\Unit3.pas</Transaction>
+    <Transaction>2022/03/27 18:52:29.000.768,=D:\Delphiiii\Unit3.pas</Transaction>
+    <Transaction>2022/03/27 19:17:38.000.343,=D:\Delphiiii\Unit3.pas</Transaction>
+    <Transaction>2022/06/14 21:01:27.304,=D:\Delphiiii\Unit3.pas</Transaction>
+    <Transaction>2022/06/14 22:58:52.543,D:\Delphiiii\Matrix_calculator_p.pas=D:\Delphiiii\Unit3.pas</Transaction>
+    <Transaction>2022/06/14 22:58:52.543,D:\Delphiiii\Matrix_calculator_p.fmx=D:\Delphiiii\Unit3.fmx</Transaction>
+    <Transaction>2022/06/14 22:59:00.936,D:\Delphiiii\Matrix_calculator_u.dproj=D:\Delphiiii\Project3.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

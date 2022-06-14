@@ -1,0 +1,393 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      640s
+      480s
+      640s
+      480s
+      640s
+      480s
+      640s
+      480s
+      640s
+      480s
+      640s
+      480s
+      640s
+      480s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      object Panel1: TPanel
+        Position.X = 24.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 201.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object GridPanelLayout1: TGridPanelLayout
+          Align = Client
+          Size.Width = 185.000000000000000000
+          Size.Height = 201.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Edit2A1
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = Edit2A2
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Edit2A3
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = Edit2A4
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object Edit2A1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 3
+            KeyboardType = NumberPad
+            Size.Width = 81.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Edit2A2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 2
+            KeyboardType = NumberPad
+            Size.Width = 82.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Edit2A3: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 1
+            KeyboardType = NumberPad
+            Size.Width = 81.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Edit2A4: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Size.Width = 82.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+      object Label1: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 48.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Matrix A'
+        TabOrder = 4
+      end
+      object btnCalculate2A: TButton
+        Anchors = []
+        StyledSettings = [Family, FontColor]
+        Position.X = 270.000000000000000000
+        Position.Y = 282.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Calculate'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = btnCalculate2AClick
+      end
+      object ComboBox1: TComboBox
+        Items.Strings = (
+          'Transpose'
+          'Determinant'
+          'Invers'
+          'Multiple by Matrix'
+          'Subtract by Matrix'
+          'Add by Matrix'
+          'Divide by Matrix')
+        Position.X = 248.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        OnChange = ComboBox1Change
+      end
+      object Label2: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 199.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 257.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Choose an operation'
+        TabOrder = 2
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Position.X = 448.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 169.000000000000000000
+        Size.Height = 249.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Viewport.Width = 165.000000000000000000
+        Viewport.Height = 245.000000000000000000
+      end
+      object lbSolution2: TLabel
+        StyledSettings = [Family, FontColor]
+        Position.X = 472.000000000000000000
+        Position.Y = 17.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 24.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Solution'
+        TabOrder = 3
+      end
+      object btnClearA2: TButton
+        StyledSettings = [Family, FontColor]
+        Position.X = 272.000000000000000000
+        Position.Y = 344.000000000000000000
+        Size.Width = 100.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'Clear'
+        TextSettings.Font.Size = 18.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        OnClick = btnClearA2Click
+      end
+      object Panel2: TPanel
+        Position.X = 440.000000000000000000
+        Position.Y = 59.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 201.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object GridPanelLayout2: TGridPanelLayout
+          Align = Client
+          Size.Width = 185.000000000000000000
+          Size.Height = 201.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ColumnCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = Edit2B1
+              Row = 0
+            end
+            item
+              Column = 1
+              Control = Edit2B2
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = Edit2B3
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = Edit2B4
+              Row = 1
+            end>
+          RowCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              SizeStyle = Auto
+            end>
+          object Edit2B1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 3
+            KeyboardType = NumberPad
+            Size.Width = 81.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Edit2B2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 2
+            KeyboardType = NumberPad
+            Size.Width = 82.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Edit2B3: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 1
+            KeyboardType = NumberPad
+            Size.Width = 81.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Edit2B4: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Center
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Size.Width = 82.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem3'
+    end
+    object TabItem4: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem4'
+    end
+    object TabItem5: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem5'
+    end
+    object TabItem6: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem6'
+    end
+    object TabItem7: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem7'
+    end
+  end
+end
